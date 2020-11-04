@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    
     <link
       rel="apple-touch-icon"
       sizes="76x76"
@@ -23,6 +24,7 @@
     <title>FSS | Task by Hariram</title>
   </head>
   <body class="text-gray-800 antialiased">
+      
     <nav
       class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg"
     >
@@ -64,7 +66,7 @@
             <li class="flex items-center">
               <a
                 class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="#pablo"
+                href="#hari"
                 ><i
                   class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "
                 ></i
@@ -74,9 +76,9 @@
             <li class="flex items-center">
               <a
                 class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="#pablo"
+                href="#hari" id="twitter"
                 ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "
+                  class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg"
                 ></i
                 ><span class="lg:hidden inline-block ml-2">Tweet</span></a
               >
@@ -84,7 +86,7 @@
             <li class="flex items-center">
               <a
                 class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="#pablo"
+                href="#hari"
                 ><i
                   class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "
                 ></i
@@ -434,11 +436,11 @@
             <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
             
             <div class="mt-6">
-              <button
+              <button id = "twitter"
                 class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
-                <i class="flex fab fa-twitter"></i></button
+                <i class="flex fab fa-twitter" ></i></button
               ><button
                 class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
@@ -548,5 +550,18 @@
       document.getElementById(collapseID).classList.toggle("hidden");
       document.getElementById(collapseID).classList.toggle("block");
     }
+    const twitterButton = document.getElementById('twitter');
+
+twitterButton.addEventListener('click', tweetQuote);
+
+
+function tweetQuote(){
+    // const quote = 'Hariram';
+    // const author = 'Hari';
+    const twitterUrl = `https://twitter.com/intent/tweet`;
+    window.open(twitterUrl, '_blank');
+}
+
+
   </script>
 </html>
